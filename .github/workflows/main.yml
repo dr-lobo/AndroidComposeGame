@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Decode Keystore
         id: decode_keystore
-        uses: timheuer/base64-to-file@v1.1.0
+        uses: timheuer/base64-to-file@v1.1
         with:
           fileName: 'key.jks'
           encodedString: ${{ secrets.PLAY_UPLOAD_KEYSTORE }}
