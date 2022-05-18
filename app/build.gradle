@@ -21,7 +21,7 @@ android {
 
   signingConfigs {
     release {
-      storeFile file("key/GameUploadKey.jks")
+      storeFile file("key/key.jks")
       storePassword System.getenv("PLAY_UPLOAD_KEY_PASSWORD")
       keyAlias "upload"
       keyPassword System.getenv("PLAY_UPLOAD_KEY_PASSWORD")
