@@ -1,6 +1,3 @@
-Google App Bundle
-
-
 name: Build Release App Bundle
 
 on: workflow_dispatch
