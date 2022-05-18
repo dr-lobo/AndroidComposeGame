@@ -1,3 +1,6 @@
+Google App Bundle
+
+
 name: Build Release App Bundle
 
 on: workflow_dispatch
@@ -10,7 +13,7 @@ jobs:
         id: decode_keystore
         uses: timheuer/base64-to-file@v1.1
         with:
-          fileName: 'key.jks'
+          fileName: 'app/key.jks'
           encodedString: ${{ secrets.PLAY_UPLOAD_KEYSTORE }}
       - uses: actions/checkout@v2
       - name: set up JDK 11
@@ -18,5 +21,8 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '11'
- 
+      - name: build prod
+        run: ./gradlew bundleRelease
+        env:
+          PLAY_UPLOAD_KEY_PASSWORD: ${{ secrets.PLAY_UPLOAD_KEY_PASSWORD }}
           
