@@ -12,8 +12,7 @@ jobs:
         with:
           fileName: 'key.jks'
           encodedString: ${{ secrets.PLAY_UPLOAD_KEYSTORE }}
-          echo: gpalma here
-                pwd
+          echo: pwd
                 ls -a
       - uses: actions/checkout@v2
       - name: set up JDK 11
@@ -22,7 +21,7 @@ jobs:
           distribution: 'temurin'
           java-version: '11'
       - name: build prod
-        run: ./gradlew bundleRelease --info
+        run: ./gradlew bundleRelease
         env:
           PLAY_UPLOAD_KEY_PASSWORD: ${{ secrets.PLAY_UPLOAD_KEY_PASSWORD }}
           
