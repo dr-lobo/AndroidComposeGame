@@ -19,9 +19,19 @@ android {
     }
   }
 
+  signingConfigs {
+    release {
+      storeFile file("GameUploadKey.jks")
+      storePassword System.getenv("PLAY_UPLOAD_KEY_PASSWORD")
+      keyAlias "upload"
+      keyPassword System.getenv("PLAY_UPLOAD_KEY_PASSWORD")
+    }
+  }
+
   buildTypes {
     release {
-      minifyEnabled false
+      minifyEnabled true
+      signingConfig signingConfigs.release
       proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
     }
   }

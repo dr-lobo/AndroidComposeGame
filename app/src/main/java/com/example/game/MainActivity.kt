@@ -1,13 +1,23 @@
 package com.example.game
 
 import android.os.Bundle
+import android.view.Surface
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material.Card
 import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Scaffold
 import androidx.compose.material.Surface
+import androidx.compose.material.Text
+import androidx.compose.material.TopAppBar
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import com.example.game.ui.theme.GameTheme
+import org.w3c.dom.Text
 
 class MainActivity : ComponentActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,7 +26,25 @@ class MainActivity : ComponentActivity() {
       GameTheme {
         // A surface container using the 'background' color from the theme
         Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colors.background) {
-          Game1()
+          Scaffold(
+            topBar = {
+              TopAppBar { Text("Maths is Fun") }
+            }
+          ) {
+            Column(Modifier.fillMaxWidth()) {
+              Card(
+                Modifier
+                  .fillMaxWidth()
+                  .padding(16.dp),
+                elevation = 4.dp
+              ) {
+                Text(
+                  modifier = Modifier.padding(16.dp),
+                  text = "GAME 1"
+                )
+              }
+            }
+          }
         }
       }
     }
