@@ -8,9 +8,9 @@ jobs:
     steps:
       - name: Decode Keystore
         id: decode_keystore
-        uses: timheuer/base64-to-file@v1
+        uses: timheuer/base64-to-file@v1.1.0
         with:
-          fileName: 'key/key.jks'
+          fileName: 'key.jks'
           encodedString: ${{ secrets.PLAY_UPLOAD_KEYSTORE }}
       - uses: actions/checkout@v2
       - name: set up JDK 11
