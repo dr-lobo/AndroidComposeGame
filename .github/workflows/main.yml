@@ -12,9 +12,9 @@ jobs:
         with:
           fileName: 'key.jks'
           encodedString: ${{ secrets.PLAY_UPLOAD_KEYSTORE }}
-          echo:
-              pwd
-              ls -a
+          echo: gpalma here
+                pwd
+                ls -a
       - uses: actions/checkout@v2
       - name: set up JDK 11
         uses: actions/setup-java@v2
