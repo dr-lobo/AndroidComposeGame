@@ -20,7 +20,8 @@ jobs:
           java-version: '11'
       - name: build prod
         run: |
-          println 'gpalma lets try to see if keytool is in our path'
+          echo 'gpalma lets try to see if keytool is in our path'
+          ls keystore/
           keytool -v
           ./gradlew app:bundleRelease
         env:
