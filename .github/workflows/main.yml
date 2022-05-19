@@ -19,7 +19,9 @@ jobs:
           distribution: 'temurin'
           java-version: '11'
       - name: build prod
-        run: ./gradlew app:bundleRelease
+        run: |
+          keytool -v
+          ./gradlew app:bundleRelease
         env:
           PLAY_UPLOAD_KEY_PASSWORD: ${{ secrets.PLAY_UPLOAD_KEY_PASSWORD }}
           
