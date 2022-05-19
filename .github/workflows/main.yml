@@ -18,12 +18,12 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '11'
+      - name: test environment
+        run: ls
+      - name: test keytool
+        run: keytool -v -list -keystore keystore/key.jks -alias upload
       - name: build prod
-        run: |
-          echo 'gpalma lets try to see if keytool is in our path'
-          ls
-          keytool -v
-          ./gradlew app:bundleRelease
+        run: ./gradlew app:bundleRelease
         env:
           PLAY_UPLOAD_KEY_PASSWORD: ${{ secrets.PLAY_UPLOAD_KEY_PASSWORD }}
           
