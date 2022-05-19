@@ -21,7 +21,7 @@ jobs:
       - name: build prod
         run: |
           echo 'gpalma lets try to see if keytool is in our path'
-          ls keystore/
+          ls
           keytool -v
           ./gradlew app:bundleRelease
         env:
