@@ -18,10 +18,6 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '11'
-      - name: test environment
-        run: ls
-      - name: test keytool
-        run: keytool -v -list -keystore keystore/key.jks -alias upload
       - name: build prod
         run: ./gradlew app:bundleRelease
         env:
