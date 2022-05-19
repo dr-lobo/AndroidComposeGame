@@ -29,7 +29,7 @@ android {
         keystoreFile.renameTo("keystore/key.jks")
       }
 
-      storeFile file("keystore/key.jks")
+      storeFile = file("keystore/key.jks")
       storePassword System.getenv("PLAY_UPLOAD_KEY_PASSWORD")
       keyAlias "upload"
       keyPassword System.getenv("PLAY_UPLOAD_KEY_PASSWORD")
