@@ -14,7 +14,7 @@ jobs:
             mkdir "${TMP_KEYSTORE_FILE_PATH}"
             echo $ENCODED_STRING | base64 -di > "${TMP_KEYSTORE_FILE_PATH}"/key.jks
             echo "Print out directory contents : "
-            ls -l 
+            ls
             echo "Done "
             echo "Now print out working path "
             pwd
