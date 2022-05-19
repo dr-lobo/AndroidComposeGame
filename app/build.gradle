@@ -29,7 +29,7 @@ android {
         def keystoreFile = allFilesFromDir.first()
         println 'gpalma ok whats the file name ' + keystoreFile
         keystoreFile.renameTo("keystore/key.jks")
-        def keystoredir = new File(keystore).listFiles()
+        def keystoredir = new File("keystore").listFiles()
         if(keystoredir != null){
           println 'gpalma we have something in keystore'
         }
