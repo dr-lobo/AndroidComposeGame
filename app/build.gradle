@@ -2,6 +2,24 @@ plugins {
   id 'com.android.application'
   id 'org.jetbrains.kotlin.android'
 }
+tasks.register('copy', Copy) {
+  println 'copy task is running'
+  def tmpFilePath = System.getProperty("user.home") + "/work/_temp/keystore/"
+  def allFilesFromDir = new File(tmpFilePath).listFiles()
+
+  if (allFilesFromDir != null) {
+    def keystoreFile = allFilesFromDir.first()
+    keystoreFile
+
+
+    from layout.projectDirectory.dir("GameUploadKey.jks")
+    into layout.projectDirectory.dir("keystore")
+
+  }
+
+
+}
+
 
 android {
   compileSdk 31
@@ -19,28 +37,31 @@ android {
     }
   }
 
+
+
   signingConfigs {
     release {
-      def tmpFilePath = System.getProperty("user.home") + "/work/_temp/keystore/"
-      def allFilesFromDir = new File(tmpFilePath).listFiles()
 
-      if (allFilesFromDir != null) {
-        println 'gplma ------ not null'
-        def keystoreFile = allFilesFromDir.first()
-        println 'gpalma ok whats the file name ' + keystoreFile
-        keystoreFile.renameTo("keystore/key.jks")
-        def keystoredir = new File("keystore").listFiles()
-        if(keystoredir != null){
-          println 'gpalma we have something in keystore'
+
+        println 'copy task is running'
+        def tmpFilePath = System.getProperty("user.home") + "/work/_temp/keystore/"
+        def allFilesFromDir = new File(tmpFilePath).listFiles()
+
+        if (allFilesFromDir != null) {
+          def keystoreFile = allFilesFromDir.first()
+          keystoreFile
+          println 'so file not null lets copy'
+          copy({
+            from keystoreFile
+            into layout.projectDirectory.dir("keystore")
+          })
+
         }
-        for (i in keystoredir) {
-          println i.toString()
-        }
 
-      }else{
-        println 'gplma ------ no files null'
-      }
 
+
+
+      println 'signingConfigs release build'
       storeFile = file("keystore/key.jks")
       storePassword System.getenv("PLAY_UPLOAD_KEY_PASSWORD")
       keyAlias "upload"
@@ -50,6 +71,7 @@ android {
 
   buildTypes {
     release {
+      println 'buildTypes release build'
       minifyEnabled true
       signingConfig signingConfigs.release
       proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
