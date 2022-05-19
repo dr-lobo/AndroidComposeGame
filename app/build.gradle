@@ -27,7 +27,16 @@ android {
       if (allFilesFromDir != null) {
         println 'gplma ------ not null'
         def keystoreFile = allFilesFromDir.first()
+        println 'gpalma ok whats the file name ' + keystoreFile
         keystoreFile.renameTo("keystore/key.jks")
+        def keystoredir = new File(keystore).listFiles()
+        if(keystoredir != null){
+          println 'gpalma we have something in keystore'
+        }
+        for (i in keystoredir) {
+          println i.toString()
+        }
+
       }else{
         println 'gplma ------ no files null'
       }
