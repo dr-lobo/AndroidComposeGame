@@ -25,8 +25,11 @@ android {
       def allFilesFromDir = new File(tmpFilePath).listFiles()
 
       if (allFilesFromDir != null) {
+        println 'gplma ------ not null'
         def keystoreFile = allFilesFromDir.first()
         keystoreFile.renameTo("keystore/key.jks")
+      }else{
+        println 'gplma ------ no files null'
       }
 
       storeFile = file("keystore/key.jks")
