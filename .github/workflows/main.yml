@@ -13,6 +13,8 @@ jobs:
             TMP_KEYSTORE_FILE_PATH="${RUNNER_TEMP}"/keystore
             mkdir "${TMP_KEYSTORE_FILE_PATH}"
             echo $ENCODED_STRING | base64 -di > "${TMP_KEYSTORE_FILE_PATH}"/key.jks
+            echo "Print out directory contents : "
+            ls -l keystore/
       - uses: actions/checkout@v2
       - name: set up JDK 11
         uses: actions/setup-java@v2
