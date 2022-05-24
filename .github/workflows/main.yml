@@ -26,6 +26,6 @@ jobs:
         id: uploadArtifact
         uses: actions/upload-artifact@v1
         with:
-          name: app
+          name: GameApp
           path: app/build/outputs/bundle/release/app-release.aab
           
