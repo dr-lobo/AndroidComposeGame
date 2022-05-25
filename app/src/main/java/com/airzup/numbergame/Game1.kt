@@ -1,4 +1,4 @@
-package com.example.game
+package com.airzup.numbergame
 
 import android.os.CountDownTimer
 import androidx.compose.foundation.BorderStroke
@@ -28,7 +28,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.game.ui.theme.GameTheme
+import com.airzup.numbergame.ui.theme.GameTheme
 
 @Composable
 fun Game1() {

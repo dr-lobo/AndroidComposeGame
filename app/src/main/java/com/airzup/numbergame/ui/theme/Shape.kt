@@ -1,4 +1,4 @@
-package com.example.game.ui.theme
+package com.airzup.numbergame.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

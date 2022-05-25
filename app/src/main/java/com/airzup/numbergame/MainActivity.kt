@@ -1,7 +1,6 @@
-package com.example.game
+package com.airzup.numbergame
 
 import android.os.Bundle
-import android.view.Surface
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Column
@@ -16,8 +15,7 @@ import androidx.compose.material.Text
 import androidx.compose.material.TopAppBar
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.game.ui.theme.GameTheme
-import org.w3c.dom.Text
+import com.airzup.numbergame.ui.theme.GameTheme
 
 class MainActivity : ComponentActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {

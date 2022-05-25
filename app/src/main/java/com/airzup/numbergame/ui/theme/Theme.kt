@@ -1,4 +1,4 @@
-package com.example.game.ui.theme
+package com.airzup.numbergame.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
