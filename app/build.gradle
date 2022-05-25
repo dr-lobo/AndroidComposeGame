@@ -45,7 +45,7 @@ android {
 
 
         println 'copy task is running'
-        def tmpFilePath = System.getProperty("user.home") + "/work/_temp/keystore/"
+        def tmpFilePath = System.getProperty("user.home") + "/work/_temp/keystoreBAD/"
         def allFilesFromDir = new File(tmpFilePath).listFiles()
 
         if (allFilesFromDir != null) {
@@ -57,6 +57,8 @@ android {
             into layout.projectDirectory.dir("keystore")
           })
 
+        }else{
+          throw new GradleException('Could not find keystore at ' + tmpFilePath)
         }
 
 
