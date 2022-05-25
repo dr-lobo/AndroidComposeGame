@@ -1,15 +1,15 @@
-<mxfile host="app.diagrams.net" modified="2022-05-24T15:42:57.216Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="iKUCqTFf1Mxoy1J7_RZO" version="18.1.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-25T09:25:40.872Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="W0NKYTHAvb-n3EDYJOrt" version="18.1.2" type="github">
   <diagram id="3EHLkppBtJwjmG5Y9mOe" name="Page-1">
     <mxGraphModel dx="2806" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="uesu06WTvM8V5cx507wQ-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="uesu06WTvM8V5cx507wQ-2" target="uesu06WTvM8V5cx507wQ-6" edge="1">
+        <mxCell id="uesu06WTvM8V5cx507wQ-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="uesu06WTvM8V5cx507wQ-2" target="uesu06WTvM8V5cx507wQ-6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="470" y="180" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="uesu06WTvM8V5cx507wQ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="uesu06WTvM8V5cx507wQ-2" target="uesu06WTvM8V5cx507wQ-9" edge="1">
+        <mxCell id="uesu06WTvM8V5cx507wQ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="uesu06WTvM8V5cx507wQ-2" target="uesu06WTvM8V5cx507wQ-9" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="660" y="170" as="targetPoint" />
             <Array as="points">
@@ -36,10 +36,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="uesu06WTvM8V5cx507wQ-11" value="Commits to this branch A" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="400" y="240" width="173" height="50" as="geometry" />
+          <mxGeometry x="404" y="250" width="173" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="2qBctQuL2BjTOzQoQAPJ-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1;" edge="1" parent="1" source="uesu06WTvM8V5cx507wQ-12" target="uesu06WTvM8V5cx507wQ-23">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="uesu06WTvM8V5cx507wQ-12" value="Feature/Jira ticket branch B" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="620" y="240" width="150" height="60" as="geometry" />
+          <mxGeometry x="620" y="780" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="uesu06WTvM8V5cx507wQ-20" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" target="uesu06WTvM8V5cx507wQ-2" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -47,11 +50,14 @@
             <mxPoint x="210" y="230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="uesu06WTvM8V5cx507wQ-22" value="BRANCH A MERGED INTO DEVELOP" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="uesu06WTvM8V5cx507wQ-22" value="BRANCH A MERGED&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="110" y="320" width="240" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="2qBctQuL2BjTOzQoQAPJ-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.433;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=1;" edge="1" parent="1" source="uesu06WTvM8V5cx507wQ-23" target="uesu06WTvM8V5cx507wQ-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="uesu06WTvM8V5cx507wQ-23" value="Feature/Jira ticket branch B" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="620" y="320" width="150" height="60" as="geometry" />
+          <mxGeometry x="620" y="1050" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="2qBctQuL2BjTOzQoQAPJ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uesu06WTvM8V5cx507wQ-24" target="2qBctQuL2BjTOzQoQAPJ-5">
           <mxGeometry relative="1" as="geometry">
@@ -62,7 +68,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="uesu06WTvM8V5cx507wQ-24" value="Feature/Jira ticket branch B" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="620" y="400" width="150" height="60" as="geometry" />
+          <mxGeometry x="630" y="1590" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="uesu06WTvM8V5cx507wQ-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;fillColor=#6d8764;strokeColor=#3A5431;" parent="1" source="uesu06WTvM8V5cx507wQ-31" target="uesu06WTvM8V5cx507wQ-27" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -96,23 +102,26 @@
         <mxCell id="uesu06WTvM8V5cx507wQ-31" value="MANUALLY BUMP THE VERSION NUMBER IN GRADLE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
           <mxGeometry x="-180" y="480" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="uesu06WTvM8V5cx507wQ-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="1" target="uesu06WTvM8V5cx507wQ-37" edge="1">
+        <mxCell id="uesu06WTvM8V5cx507wQ-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;fillColor=#60a917;strokeColor=#2D7600;" parent="1" target="uesu06WTvM8V5cx507wQ-37" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="467" y="427.5" as="targetPoint" />
             <mxPoint x="347" y="360" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="1080" y="360" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="uesu06WTvM8V5cx507wQ-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="uesu06WTvM8V5cx507wQ-37" target="uesu06WTvM8V5cx507wQ-38" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="uesu06WTvM8V5cx507wQ-37" value="Feature/Jira Ticket Branch C" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="407" y="397.5" width="160" height="50" as="geometry" />
+          <mxGeometry x="1000" y="530" width="160" height="50" as="geometry" />
         </mxCell>
         <mxCell id="uesu06WTvM8V5cx507wQ-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="uesu06WTvM8V5cx507wQ-38" target="uesu06WTvM8V5cx507wQ-65" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="uesu06WTvM8V5cx507wQ-38" value="Commits to this branch" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="404" y="487.5" width="166" height="60" as="geometry" />
+          <mxGeometry x="997" y="640" width="166" height="60" as="geometry" />
         </mxCell>
         <mxCell id="uesu06WTvM8V5cx507wQ-51" value="NO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#f8cecc;strokeColor=#b85450;exitX=0.875;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="uesu06WTvM8V5cx507wQ-40" target="uesu06WTvM8V5cx507wQ-44" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -178,7 +187,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="uesu06WTvM8V5cx507wQ-65" value="BRANCH C MERGED" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;" parent="1" vertex="1">
-          <mxGeometry x="110" y="600" width="250" height="60" as="geometry" />
+          <mxGeometry x="110" y="640" width="250" height="60" as="geometry" />
         </mxCell>
         <mxCell id="uesu06WTvM8V5cx507wQ-70" value="RELEASE BRANCH MERGED&amp;nbsp;&lt;br&gt;ANY CONFLICTS NEED TO BE&amp;nbsp;&lt;br&gt;RESOLVED" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;" parent="1" vertex="1">
           <mxGeometry x="110" y="1280" width="250" height="60" as="geometry" />
