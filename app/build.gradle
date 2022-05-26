@@ -57,8 +57,6 @@ android {
             into layout.projectDirectory.dir("keystore")
           })
 
-        }else{
-          throw new GradleException('Exception - Could not find keystore at ' + tmpFilePath)
         }
 
 
