@@ -28,4 +28,13 @@ jobs:
         with:
           name: GameApp
           path: app/build/outputs/bundle/release/app-release.aab
+      - name: Publish to Play Store internal test track
+        uses: r0adkll/upload-google-play@v1
+        with:
+          serviceAccountJsonPlainText: ${{ secrets.SERVICE_ACCOUNT_JSON }}
+          packageName: com.airzup.numbergame
+          releaseFile: app/build/outputs/bundle/release/app-release.aab
+          track: internal
+          userFraction: 0.50   
+          
           
