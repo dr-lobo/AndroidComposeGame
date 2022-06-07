@@ -40,9 +40,6 @@ android {
 
   signingConfigs {
     release {
-
-
-      println 'copy task is running'
       def tmpFilePath = System.getProperty("user.home") + "/work/_temp/keystore/"
       def allFilesFromDir = new File(tmpFilePath).listFiles()
 
@@ -95,6 +92,7 @@ android {
       excludes += '/META-INF/{AL2.0,LGPL2.1}'
     }
   }
+  namespace 'com.airzup.numbergame'
 }
 
 dependencies {
