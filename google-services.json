@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "188804530862",
+    "project_id": "composegame",
+    "storage_bucket": "composegame.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188804530862:android:0c6a7a13ed93a1ecd8a33f",
+        "android_client_info": {
+          "package_name": "com.airzup.numbergame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "188804530862-hm974suongi74ufa4rph7i7jdp3k7dt8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH-Eqwg1aVKGu3FYn9t7iQvu0KlCf019A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "188804530862-hm974suongi74ufa4rph7i7jdp3k7dt8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188804530862:android:d8cb6b4b983c6fbed8a33f",
+        "android_client_info": {
+          "package_name": "com.airzup.numbergame.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "188804530862-hm974suongi74ufa4rph7i7jdp3k7dt8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH-Eqwg1aVKGu3FYn9t7iQvu0KlCf019A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "188804530862-hm974suongi74ufa4rph7i7jdp3k7dt8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
