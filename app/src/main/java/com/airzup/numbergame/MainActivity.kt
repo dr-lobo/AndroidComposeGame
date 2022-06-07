@@ -1,6 +1,7 @@
 package com.airzup.numbergame
 
 import android.os.Bundle
+import android.view.Surface
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Column
@@ -16,6 +17,7 @@ import androidx.compose.material.TopAppBar
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.airzup.numbergame.ui.theme.GameTheme
+import org.w3c.dom.Text
 
 class MainActivity : ComponentActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,6 +32,7 @@ class MainActivity : ComponentActivity() {
             }
           ) {
             Column(Modifier.fillMaxWidth()) {
+            //  throw RuntimeException("Test Crash"); // Force a crash
               Card(
                 Modifier
                   .fillMaxWidth()
