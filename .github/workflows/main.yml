@@ -22,12 +22,17 @@ jobs:
         run: ./gradlew app:bundleRelease
         env:
           PLAY_UPLOAD_KEY_PASSWORD: ${{ secrets.PLAY_UPLOAD_KEY_PASSWORD }}
-      - name: Publish to Play Store internal test track
-        uses: r0adkll/upload-google-play@v1
+      - name: Upload release artifact
+        id: uploadArtifact
+        uses: actions/upload-artifact@v1
         with:
-          serviceAccountJsonPlainText: ${{ secrets.SERVICE_ACCOUNT_JSON }}
-          serviceAccountJson: google-services.json
-          packageName: com.airzup.numbergame
-          releaseFile: app/build/outputs/bundle/release/app-release.aab
-          track: internal
+          name: SinatraReleaseBundle
+          path: app/build/outputs/bundle/release/app-release.aab
+      - name: Upload release artifact
+        id: uploadMapping
+        uses: actions/upload-artifact@v1
+        with:
+          name: SinatraReleaseMapping
+          path: app/build/outputs/mapping/release/mapping.txt
+
           
